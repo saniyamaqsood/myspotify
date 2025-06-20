@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="spot.css">
+    <link rel="stylesheet" href="utility.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left border">
+            <div class="home bg-grey rounded">
+                <div class="logo"> <img class="invert imgg" src="icons/logo.svg" alt="Spotify">Spotify</div>
+                <ul>
+                    <li class="la"> <img class="invert" src="icons/home.svg" alt="home" />Home </li>
+                    <li class="la" onclick="togglesearch()"> <img class="invert" src="icons/search.svg"
+                            alt="search" />Search
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded">
+                <p class="title"> Your Library <img class="invert add" src="icons/plus.svg" alt="add songs" onclick="togglecreate()" /> </p>
+                <div class="create">
+                    <p class="text">Create your first playlist</p>
+                    It's easy, we'll help you<br>
+                    <button class="btn" onclick="togglecreate()"> Create playlist </button>
+                </div>
+
+                <div class="songcard" id="songbox">
+                    <img src="images/song2.png" alt="song-img" class="song-img">
+                    <p class="song-info">
+                        <button class="play-btn" data-src="songs/PalPal.mp3" data-cover="images/song2.png">▶</button>
+
+                    <p class="song-title">Pal Pal</p>
+                    <p class="song-artists">
+                        Afusic, AliSoomroMusic.
+                    </p>
+                    </p>
+
+                </div>
+
+                <div class="songcard" id="songBox">
+                    <img src="images/song1.png" alt="song-img" class="song-img">
+                    <p class="song-info">
+                        <button class="play-btn" data-src="songs/FindingHer.mp3"
+                            data-cover="images/song1.png">▶</button>
+                    <p class="song-title">Finding Her</p>
+                    <p class="song-artists">
+                        Kushagra, bharath, Saaheal.
+                    </p>
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="right border bg-grey">
+            <nav class="nav">
+                <div class="search-container" id="searchbox">
+                    <input type="text" placeholder="Search for songs, artists..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <button class="sign" onclick="togglelogin()"> Sign up</button>
+                <button class="btn" onclick="togglelogin()">Log in </button>
+            </nav>
+            <div class="loginbox" id="loginBox">
+                <label for="email">Email or username</label>
+                <input type="text" id="email" placeholder="Email or username"><br>
+
+                <button class="continue">Continue</button>
+
+                <p class="signup-text">
+                    Don’t have an account? <a href="#">Sign up for Spotify</a>
+                </p>
+            </div>
+
+            <div class="Spotify-playlist">
+                <h1 class="head">Spotify Playlists</h1>
+                <div class="card-container">
+                    <div class="card border1 " onclick="togglesong1()">
+                        <img src="images/spot5.png" alt="img-1" class="img" />
+                        <h2 class="text">Favourite Songs</h2>
+                        <P class="lines"> By Me </P>
+                    </div>
+                    <div class="card border1 " onclick="togglesong2()">
+                        <img src="images/spot1.jpg" alt="img-1" class="img" />
+                        <h2 class="text">Happy Hits!</h2>
+                        <P class="lines"> Hits to boost your mood and fill you with... </P>
+                    </div>
+                    <div class="card border1 ">
+                        <img src="images/spot2.jpg" alt="img-1" class="img" />
+                        <h2 class="text">Trending Songs 2025</h2>
+                        <P class="lines">By Feel Magical Vibes </P>
+                    </div>
+                    <div class="card border1 ">
+                        <img src="images/spot3.jpg" alt="img-1" class="img" />
+                        <h2 class="text"> Best English Songs Viral Hits </h2>
+                        <P class="lines">By Vibez </P>
+                    </div>
+                    <div class="card border1 ">
+                        <img src="images/spot4.jpg" alt="img-1" class="img" />
+                        <h2 class="text">Top Songs-Global Latest New Release</h2>
+                        <P class="lines">By Spotify </P>
+                    </div>
+
+                    <div class="card border1 hidden" id="newPlaylist">
+                        <img src="images/spot6.png" alt="img-1" class="img" />
+                        <h2 class="text">New Playlist</h2>
+                        <P class="lines"> Create your space... </P>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="song-preview-panel" id="songPanel">
+        <img src="" alt="Song Cover" id="panelCover" />
+        <div class="panel-info">
+            <h2 id="panelTitle">Song Title</h2>
+            <p id="panelArtist">Artist Name</p>
+            <div class="songbtns">
+                <img src="icons/left.svg" alt="prev-song" class="icon invert" />
+                <button class="play-btn">▶</button>
+                <img src="icons/right.svg" alt="next-song" class="icon invert" /><br>
+    
+            </div>
+            <img src="icons/min.png" alt="min" class="small"/>
+        </div>
+    </div>
+
+
+    <script src="spot.js"></script>
+</body>
+
+</html>
