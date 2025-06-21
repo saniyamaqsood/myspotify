@@ -359,3 +359,9 @@ input::placeholder {
 }
 
 .small{width:19rem;}
+
+@media (max-width:1400px){
+    .left{
+        z-index:3;
+    }
+}
