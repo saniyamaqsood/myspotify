@@ -396,7 +396,7 @@ float:right;
   text-align: right;
 }
 
-/*@media (max-width:1020px){
+@media (max-width:414px){
     .left{
       width:77vw;
       height:100vh;
@@ -425,7 +425,7 @@ float:right;
   .icon{
     margin-bottom:2rem;
   }
-}*/
+}
 
 
  @media (max-width:1020px){
