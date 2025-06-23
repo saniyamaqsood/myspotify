@@ -423,6 +423,7 @@ float:right;
   #panelArtist{
     margin-bottom:2rem;
   }
+   .play1{border:none;}
   
 }
 
@@ -453,5 +454,6 @@ float:right;
     height:20rem;
   }
   .card-container{width:21rem;}
+   .play1{border:none;}
 }
 
