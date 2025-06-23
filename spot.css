@@ -427,6 +427,9 @@ float:right;
   
 }
 
+@media( max-width: 768px){
+  .hamburger{margin-right:23rem;}
+}
 
 
 @media (max-width:1020px){
