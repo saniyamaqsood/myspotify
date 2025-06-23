@@ -304,7 +304,7 @@ input::placeholder {
 
 
 .play-btn {
-  float: right;
+float:right;
   margin-top: 7px;
   padding-left:1.5px;
   padding-bottom: 2px;
@@ -321,6 +321,27 @@ input::placeholder {
 }
 
 .play-btn:hover {
+  background-color: #1db954;
+  color: black;
+  border: none;
+}
+
+.play1{
+float:right;
+  margin-top: 7px;
+  padding-left:1.5px;
+  padding-bottom: 2px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #b3b3b3;
+  border-radius: 50%;
+  width: 24px;
+  height: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;}
+
+  .play1:hover {
   background-color: #1db954;
   color: black;
   border: none;
@@ -358,11 +379,23 @@ input::placeholder {
   margin-bottom:20px;
 }
 
+.iconn{margin-right:11rem;
+       margin-top:11px;
+      width:20px}
+
+.hamburger{display: none;}
+
 .small{width:19rem;}
 
+.close-btn {
+  display: none;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 5px;
+  text-align: right;
+}
 
-
-//media queries
 @media (max-width:1020px){
     .left{
       width:77vw;
@@ -393,4 +426,9 @@ input::placeholder {
     margin-bottom:2rem;
   }
 }
+
+
+ 
+
+
 
