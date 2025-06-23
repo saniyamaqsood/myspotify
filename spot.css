@@ -396,7 +396,7 @@ float:right;
   text-align: right;
 }
 
-@media (max-width:1020px){
+/*@media (max-width:1020px){
     .left{
       width:77vw;
       height:100vh;
@@ -425,10 +425,36 @@ float:right;
   .icon{
     margin-bottom:2rem;
   }
+}*/
+
+
+ @media (max-width:1020px){
+    .left{
+      width:88vw;
+      height:100vh;
+      background-color:black;
+      position:absolute;
+      left:-100%;
+      transition:all .3s;
+      z-index:1;
+    }
+    .right{width:100vw;
+          height:150vh;}
+  
+    .hamburger{display:block;
+               margin-top:10px;
+              margin-left:4rem;}
+  
+   .close-btn {
+    display: block;
+  }
+  #panelCover{
+    height:25rem;
+  }
+  .card-container{width:21rem;}
 }
 
 
- 
 
 
 
