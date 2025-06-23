@@ -409,7 +409,8 @@ float:right;
     .right{width:100vw;
           height:100vh;}
   
-    .hamburger{display:block;}
+    .hamburger{display:block;
+             }
   
    .close-btn {
     display: block;
@@ -422,16 +423,15 @@ float:right;
   #panelArtist{
     margin-bottom:2rem;
   }
-  .icon{
-    margin-bottom:2rem;
-  }
+  
 }
 
 
- @media (max-width:1020px){
+
+@media (max-width:1020px){
     .left{
-      width:88vw;
-      height:100vh;
+      width:95vw;
+      height:150vh;
       background-color:black;
       position:absolute;
       left:-100%;
@@ -443,18 +443,15 @@ float:right;
   
     .hamburger{display:block;
                margin-top:10px;
-              margin-left:1rem;}
+               margin-left:25px;
+              }
   
    .close-btn {
     display: block;
   }
   #panelCover{
-    height:25rem;
+    height:20rem;
   }
   .card-container{width:21rem;}
 }
-
-
-
-
 
