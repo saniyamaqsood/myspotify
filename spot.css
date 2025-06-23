@@ -360,8 +360,37 @@ input::placeholder {
 
 .small{width:19rem;}
 
-@media (max-width:1400px){
+
+
+//media queries
+@media (max-width:1020px){
     .left{
-        z-index:3;
+      width:77vw;
+      height:100vh;
+      background-color:black;
+      position:absolute;
+      left:-100%;
+      transition:all .3s;
+      z-index:1;
     }
+    .right{width:100vw;
+          height:100vh;}
+  
+    .hamburger{display:block;}
+  
+   .close-btn {
+    display: block;
+  }
+  #panelCover{
+    height:30rem;
+    margin-top:4rem;
+    margin-bottom:3rem
+  }
+  #panelArtist{
+    margin-bottom:2rem;
+  }
+  .icon{
+    margin-bottom:2rem;
+  }
 }
+
